@@ -1,0 +1,1 @@
+This is created for demonstration of [automated nodejs deployment using jenkins](https://github.com/MansoorMajeed/devops-from-scratch/blob/master/episodes/27-create-real-life-end-to-end-jenkins-pipeline.md)
