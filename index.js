@@ -11,7 +11,7 @@ const appVersion = "4.0";
 
 app.get('/', (req, res) => {
 
-  var msg = `<h1>Hello zohaib this is node application</h1>
+  var msg = `<h1>Hello zohaib this is node application version v2</h1>
    <h2>
     Process ID: ${pid} <br> 
     Running on: ${hostname} <br>
