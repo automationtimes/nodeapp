@@ -37,22 +37,17 @@ node {
     try {
         notifyBuild('STARTED')
 
-        stage('Prepare code') {
+        stage('checkout from git') {
             echo 'do checkout stuff'
         }
 
-        stage('Testing') {
-            echo 'Testing'
-            echo 'Testing - publish coverage results'
+        stage('node js app build') {
+            echo 'Application Build'
         }
 
-        stage('Staging') {
-            echo 'Deploy Stage'
-        }
-
-        stage('Deploy') {
-            echo 'Deploy - Backend'
-            echo 'Deploy - Frontend'
+        stage('Application Deploy to Server') {
+            echo 'Application Deploy to Server'
+            
         }
 
   } catch (e) {
