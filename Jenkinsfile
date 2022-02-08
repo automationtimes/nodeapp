@@ -23,23 +23,24 @@ pipeline {
          }
 
     }
-      post {
-        always {
-            script {
-                slackSend(
-        color: color_slack_msg(),
-        message: """
-            *${currentBuild.currentResult}:* Job `${env.JOB_NAME}` build `${env.BUILD_DISPLAY_NAME}`>
-            More info at: ${env.BUILD_URL}
-            Time: ${currentBuild.durationString.minus(' and counting')}
-            """
-                )
-            }
-            cleanWs()
+    post {
+    always {
+        script {
+            slackSend(
+                color: color_slack_msg(),
+                message: """
+                    *${currentBuild.currentResult}:* Job `${env.JOB_NAME}` build `${env.BUILD_DISPLAY_NAME}`>
+                    More info at: ${env.BUILD_URL}
+                    Time: ${currentBuild.durationString.minus(' and counting')}
+                    """
+            )
         }
+        cleanWs()
     }
 }
-switch(currentBuild.currentResult) {
+}
+def color_slack_msg() {
+    switch(currentBuild.currentResult) {
     case "SUCCESS":
         return "good"
         break
@@ -51,3 +52,4 @@ switch(currentBuild.currentResult) {
         return "warning"
         break
     }
+}
