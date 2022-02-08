@@ -18,12 +18,20 @@ pipeline {
             {  
                sh 'scp -r /var/lib/jenkins/workspace/nodeapplication/* root@10.0.0.159:/var/www/html/'
                sh 'ssh  -o StrictHostKeyChecking=no root@10.0.0.159 "pwd && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
-      
-              
-
                 
             }
          }
+
+    }
+      try {
+        notifySlack()
+
+        // Existing build steps.
+    } catch (e) {
+        currentBuild.result = 'FAILURE'
+        throw e
+    } finally {
+        notifySlack(currentBuild.result)
     }
 }
 def notifySlack(String buildStatus = 'STARTED') {
@@ -47,15 +55,3 @@ def notifySlack(String buildStatus = 'STARTED') {
     slackSend(color: color, message: msg)
 }
 
-node {
-    try {
-        notifySlack()
-
-        // Existing build steps.
-    } catch (e) {
-        currentBuild.result = 'FAILURE'
-        throw e
-    } finally {
-        notifySlack(currentBuild.result)
-    }
-}
