@@ -2,13 +2,6 @@ pipipeline {
     agent any
     
     stages{
-        stage("checkout from git")
-        {
-            steps
-            {   
-                git credentialsId: '8151c8f4-8725-44e3-ae3f-/var/lib/jenkins/workspace41f5ac651f55', url: 'https://github.com/automationtimes/nodeapp.git'
-            }
-        }
         stage("node js app build")
         {
             steps
