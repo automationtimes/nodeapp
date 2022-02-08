@@ -3,6 +3,7 @@ pipeline {
     
     stages{
         stage("node js app build")
+            agent {node {label 'buildmachine'}}
         {
             steps
             {   
@@ -11,7 +12,7 @@ pipeline {
               
             }
         }
-          stage("artifacts store")
+          stage("application deploy")
           {
            
             steps
