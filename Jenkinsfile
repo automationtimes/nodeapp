@@ -24,7 +24,7 @@ pipeline {
             steps
             {  
                sh 'scp -r /var/lib/jenkins/workspace/nodeapplication/* root@10.0.0.159:/var/www/html/'
-               sh 'ssh  -o StrictHostKeyChecking=no ubuntu@10.0.0.159 "sudo su ubuntu && pwd && cd /var/www/html/ && pm2 start index.js && NODE_ENV=dev pm2 restart 0 --update-env"'
+               sh 'ssh  -o StrictHostKeyChecking=no ubuntu@10.0.0.159 "pwd && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
       
               
 
