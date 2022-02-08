@@ -3,7 +3,9 @@ pipeline {
     
     stages{
         stage("node js app build")
-            agent {node {label 'buildmachine'}}
+            agent {
+                node label 'buildmachine'
+                {
         {
             steps
             {   
