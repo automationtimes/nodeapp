@@ -26,20 +26,19 @@ pipeline {
       post {
         always {
             script {
-                slackSend()
-            }
-            cleanWs()
-        }
-    }
-}
-slackSend(
+                slackSend(
         color: color_slack_msg(),
         message: """
             *${currentBuild.currentResult}:* Job `${env.JOB_NAME}` build `${env.BUILD_DISPLAY_NAME}`>
             More info at: ${env.BUILD_URL}
             Time: ${currentBuild.durationString.minus(' and counting')}
             """
-    )
+                )
+            }
+            cleanWs()
+        }
+    }
+}
 switch(currentBuild.currentResult) {
     case "SUCCESS":
         return "good"
