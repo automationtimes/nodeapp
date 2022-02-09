@@ -12,7 +12,7 @@ pipeline {
               
             }
         }
-          stage("application store"){
+          stage("artifacts store"){
             agent {label 'artifacts'}
           
            
