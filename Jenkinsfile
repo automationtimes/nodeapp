@@ -12,15 +12,15 @@ pipeline {
               
             }
         }
-          stage("artifacts store"){
-            agent {label 'artifacts'}
+        //   stage("artifacts store"){
+        //     agent {label 'artifacts'}
           
            
-            steps
-            {  
-               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/home/jenkins'    
-            }
-         }
+        //     steps
+        //     {  
+        //        sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/home/jenkins'    
+        //     }
+        //  }
         //   stage("application deploy to server"){
            
             
