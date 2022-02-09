@@ -3,7 +3,7 @@ pipeline {
     
     stages{
         stage("node js app build"){
-         agent {label 'artifacts'}
+         agent {label 'buildmachine'}
         
             steps
             {   
@@ -11,9 +11,7 @@ pipeline {
             }
         }
           stage("artifacts store"){
-            agent {label 'buildmachine'}
-          
-           
+            agent {label 'artifacts'}
             steps
             {  
                sh 'ls -al'    
