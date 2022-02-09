@@ -16,7 +16,7 @@ pipeline {
            
             steps
             {  
-               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/home/jenkins'    
+               sh 'ls -al'    
             }
          }
         //   stage("application deploy to server"){
