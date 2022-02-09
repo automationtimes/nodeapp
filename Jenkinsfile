@@ -13,12 +13,13 @@ pipeline {
             }
         }
           stage("application deploy")
+            agent {label 'artifacts'}
           {
            
             steps
             {  
-               sh 'scp -r /home/jenkins/jenkins_slave/workspace/nodeapplication/* root@10.0.0.159:/var/www/html/'
-               sh 'ssh  -o StrictHostKeyChecking=no root@10.0.0.159 "pwd && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
+               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/opt'
+            //    sh 'ssh  -o StrictHostKeyChecking=no root@10.0.0.159 "pwd && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
                 
             }
          }
