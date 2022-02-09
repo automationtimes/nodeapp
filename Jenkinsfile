@@ -2,9 +2,9 @@ pipeline {
     agent any
     
     stages{
-        stage("node js app build")
+        stage("node js app build"){
          agent {label 'buidmachine'}
-        {
+        
             steps
             {   
           
