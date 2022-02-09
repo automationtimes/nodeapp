@@ -14,7 +14,7 @@ pipeline {
             agent {label 'artifacts'}
             steps
             {  
-               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* root@10.0.1.4:/root'    
+               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* root@10.0.1.4:/'    
             }
          }
           stage("application deploy to server"){
