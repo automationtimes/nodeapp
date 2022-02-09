@@ -16,13 +16,13 @@ pipeline {
            
             steps
             {  
-               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/home/jenkins'    
+               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* jenkins@10.0.1.4:/home/jenkins/slave2'    
             }
          }
           stage("application deploy to server"){
             steps
             {  
-               sh 'scp -r /home/jenkins/* jenkins@10.0.2.212:/var/www/html'
+               sh 'scp -r /home/jenkins/slave2/* jenkins@10.0.2.212:/var/www/html'
                sh 'ssh  -o StrictHostKeyChecking=no ubuntu@10.0.2.212 "pwd && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
                 
             }
