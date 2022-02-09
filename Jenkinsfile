@@ -12,9 +12,9 @@ pipeline {
               
             }
         }
-          stage("application deploy")
+          stage("application deploy"){
             agent {label 'artifacts'}
-          {
+          
            
             steps
             {  
