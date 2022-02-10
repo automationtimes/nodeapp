@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'buildmachine'}
     
     stages{
         stage("node js app build"){
