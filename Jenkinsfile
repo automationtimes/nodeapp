@@ -1,6 +1,4 @@
 pipeline {
-    agent any
-    
     stages{
         stage("node js app build"){
          agent {label 'buildmachine'}
