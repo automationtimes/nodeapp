@@ -1,3 +1,5 @@
+
+@Library('webApplication')
 pipeline {
     agent {label 'buildmachine'}  
     stages{
@@ -19,14 +21,7 @@ pipeline {
       post {
      always {
          script {
-            slackSend(
-                 color: color_slack_msg(),
-                 message: """
-                     *${currentBuild.currentResult}:* Job `${env.JOB_NAME}` build `${env.BUILD_DISPLAY_NAME}`>
-                      More info at: ${env.BUILD_URL}
-                      Time: ${currentBuild.durationString.minus(' and counting')}
-                      """
-              )
+           slack.slack_code()
           }
           cleanWs()
      }

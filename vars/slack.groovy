@@ -1,4 +1,4 @@
-def slack_code(
+def slack_code(){
        slackSend(
                  color: color_slack_msg(),
                  message: """
@@ -7,4 +7,4 @@ def slack_code(
                       Time: ${currentBuild.durationString.minus(' and counting')}
                       """
               )
-)
+}
