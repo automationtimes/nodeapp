@@ -2,15 +2,12 @@ pipeline {
     agent {label 'buildmachine'}  
     stages{
         stage("node js app build"){
-        //  agent {label 'buildmachine'}
-        
             steps
             {   
                sh 'npm install' 
             }
         }
           stage("App Deploy"){
-        //   agent {label 'buildmachine'}
             steps
             {  sh 'whoami'
                sh 'scp -r /home/ubuntu/slave1/workspace/webapplication/index.js ubuntu@10.0.2.212:/var/www/html/'
