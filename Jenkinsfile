@@ -14,7 +14,7 @@ pipeline {
             
             steps
             {  
-               sh 'scp -r /var/lib/jenkins/workspace/nodejsapp/* root@10.0.2.212:/opt'
+               sh 'scp -r /home/ubuntu/slave1/workspace/nodejsapp/* root@10.0.2.212:/opt'
                sh 'ssh  -o StrictHostKeyChecking=no root@10.0.2.212 "pwd && cd /opt/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
             }
          }
