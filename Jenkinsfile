@@ -1,5 +1,5 @@
-
 @Library('webApplication')
+
 pipeline {
     agent {label 'buildmachine'}  
     stages{
@@ -20,9 +20,7 @@ pipeline {
     }
       post {
      always {
-         script {
-           slack()
-          }
+        slack.slackcode()
           cleanWs()
      }
   }
