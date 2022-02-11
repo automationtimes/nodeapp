@@ -9,15 +9,15 @@ pipeline {
             {  
                
                sh '''REQUIRED_PKG="nodejs"
-PKG_OK=$(dpkg-query -W --showformat=\'${Status}\\n\' $REQUIRED_PKG|grep "install ok installed")
-echo Checking for $REQUIRED_PKG: $PKG_OK
-if [ "" = "$PKG_OK" ]; then
-  echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
-  sudo yum -y install curl
-  curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-  sudo yum install $REQUIRED_PKG --yes
-  node --version
-fi'''
+                  PKG_OK=$(dpkg-query -W --showformat=\'${Status}\\n\' $REQUIRED_PKG|grep "install ok installed")
+                  echo Checking for $REQUIRED_PKG: $PKG_OK
+                  if [ "" = "$PKG_OK" ]; then
+                  echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
+                  sudo yum -y install curl
+                  curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+                  sudo yum install $REQUIRED_PKG --yes
+                  node --version
+                  fi'''
                sh 'npm install' 
             }
         }
