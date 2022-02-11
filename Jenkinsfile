@@ -27,8 +27,7 @@ pipeline {
             steps
             {  
                sshagent(['a2052de1-772f-4777-8ecd-65c94a39249f']) {
-               sh 'ssh  -o StrictHostKeyChecking=no  "cp -r /home/ec2-user/workspace/webapplication/* /var/www/html
-                && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
+               sh 'ssh  -o StrictHostKeyChecking=no  "cp -r /home/ec2-user/workspace/webapplication/* /var/www/html && cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
  
 }
 
