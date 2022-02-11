@@ -9,9 +9,9 @@ pipeline {
             {  
                
              sh '''yum -y install epel-release
-amazon-linux-extras install epel
-yum repolist
-yum install dpkg-devel dpkg-dev
+sudo amazon-linux-extras install epel
+sudo yum repolist
+sudo yum install dpkg-devel dpkg-dev
 REQUIRED_PKG="nodejs"
 PKG_OK=$(dpkg-query -W --showformat=\\\'${Status}\\\\n\\\' $REQUIRED_PKG|grep "install ok installed")
 echo Checking for $REQUIRED_PKG: $PKG_OK
