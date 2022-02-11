@@ -21,7 +21,9 @@ pipeline {
     }
       post {
      always {
+         script {
         slack()
+         }
           cleanWs()
      }
   }
