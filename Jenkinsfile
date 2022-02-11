@@ -22,7 +22,7 @@ pipeline {
       post {
      always {
          script {
-        slack()
+        slack.slack_code()
          }
           cleanWs()
      }
