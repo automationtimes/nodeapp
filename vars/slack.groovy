@@ -11,14 +11,14 @@ def slack_code(){
 def color_slack_msg() {
     switch(currentBuild.currentResult) {
     case "SUCCESS":
-        return "good"
+        return "#2EB67D"
         break
     case "FAILURE":
     case "UNSTABLE":
-        return "danger"
+        return "#E01E5A"
         break
     default:
-        return "warning"
+        return "#ECB22E"
         break
     }
 }
