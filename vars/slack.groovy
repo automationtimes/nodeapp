@@ -18,6 +18,7 @@ def slack_code(String buildStatus = 'STARTED') {
 
     slackSend(color: color, message: msg)
 }
+node {
     try {
         slack_code()   
     } catch (e) {
@@ -26,3 +27,4 @@ def slack_code(String buildStatus = 'STARTED') {
     } finally {
         notifySlack(currentBuild.result)
     }
+}
