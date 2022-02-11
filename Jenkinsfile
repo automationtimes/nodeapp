@@ -7,12 +7,6 @@ pipeline {
         stage("node js app build"){
             steps
             {  
-               
-             sh '''sudo yum update -y
-            sudo yum install curl -y
-            curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-            sudo yum install nodejs -y
-            node --version'''  
             sh 'npm install' 
             }
         }
