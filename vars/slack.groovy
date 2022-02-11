@@ -1,4 +1,4 @@
-def slackcode(){
+def call(){
        slackSend(
                 //  color: color_slack_msg(),
                  message: """
