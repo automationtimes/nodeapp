@@ -1,30 +1,24 @@
-def slack_code(String buildStatus = 'STARTED') {
-    // Build status of null means success.
-    buildStatus = buildStatus ?: 'SUCCESS'
-
-    def color
-
-    if (buildStatus == 'STARTED') {
-        color = '#D4DADF'
-    } else if (buildStatus == 'SUCCESS') {
-        color = '#BDFFC3'
-    } else if (buildStatus == 'UNSTABLE') {
-        color = '#FFFE89'
-    } else {
-        color = '#FF9FA1'
-    }
-
-    def msg = "${buildStatus}: `${env.JOB_NAME}` #${env.BUILD_NUMBER}:\n${env.BUILD_URL}"
-
-    slackSend(color: color, message: msg)
+def slack_code(){
+       slackSend(
+                 color: color_slack_msg(),
+                 message: """
+                     *${currentBuild.currentResult}:* Job `${env.JOB_NAME}` build `${env.BUILD_DISPLAY_NAME}`>
+                      More info at: ${env.BUILD_URL}
+                      Time: ${currentBuild.durationString.minus(' and counting')}
+                      """
+              )
 }
-node {
-    try {
-        slack_code()   
-    } catch (e) {
-        currentBuild.result = 'FAILURE'
-        throw e
-    } finally {
-        notifySlack(currentBuild.result)
+def color_slack_msg() {
+    switch(currentBuild.currentResult) {
+    case "SUCCESS":
+        return "good"
+        break
+    case "FAILURE":
+    case "UNSTABLE":
+        return "danger"
+        break
+    default:
+        return "warning"
+        break
     }
 }
