@@ -27,4 +27,5 @@ pipeline {
           cleanWs()
      }
   }
+  color_slack_msg()
 }
