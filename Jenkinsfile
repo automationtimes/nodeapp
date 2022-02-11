@@ -9,20 +9,14 @@ pipeline {
             {  
                
              sh '''sudo yum update -y
-             sudo yum -y install epel-release
-sudo amazon-linux-extras install epel
-sudo yum repolist
-sudo yum install dpkg-devel dpkg-dev
-REQUIRED_PKG="nodejs"
-PKG_OK=$(dpkg-query -W --showformat=\\\'${Status}\\\\n\\\' $REQUIRED_PKG|grep "install ok installed")
-echo Checking for $REQUIRED_PKG: $PKG_OK
-if [ "" = "$PKG_OK" ]; then
-echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
-sudo yum -y install curl
-curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
-sudo yum install $REQUIRED_PKG -y
-node --version
-fi'''  
+            sudo yum -y install epel-release
+            sudo amazon-linux-extras install epel
+            sudo yum repolist
+            sudo yum install dpkg-devel dpkg-dev
+            sudo yum install curl -y
+            curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -
+            sudo yum install nodejs -y
+            node --version'''  
             sh 'npm install' 
             }
         }
