@@ -8,7 +8,8 @@ pipeline {
             steps
             {  
                
-             sh '''yum -y install epel-release
+             sh '''sudo yum update -y
+             sudo yum -y install epel-release
 sudo amazon-linux-extras install epel
 sudo yum repolist
 sudo yum install dpkg-devel dpkg-dev
