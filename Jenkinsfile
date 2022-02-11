@@ -1,4 +1,4 @@
-@Library('webApplication') _
+@Library('shared-library') _
 
 pipeline {
     agent {label 'buildmachine'}  
