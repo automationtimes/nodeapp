@@ -1,7 +1,8 @@
-@Library('webApplication')
+@Library('webApplication') _
 
 pipeline {
     agent {label 'buildmachine'}  
+
     stages{
         stage("node js app build"){
             steps
