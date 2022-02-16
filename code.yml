@@ -1,0 +1,252 @@
+credentials:
+  system:
+    domainCredentials:
+    - credentials:
+      - usernamePassword:
+          description: "github-repo-login"
+          id: "cffa7f6f-21af-4734-962e-ab2ea7055b31"
+          password: "{AQAAABAAAAAwtYUDPbeipfKSV1jNxOzaSm+rmGEfrjUG6K0m9xPs6rqRKlkNr6FvH97uAMAYs3AEMZAQtHmyEfoxZl/5Nyk2ug==}"
+          scope: GLOBAL
+          username: "automationtimes"
+      - string:
+          description: "slack-bot-token"
+          id: "slack"
+          scope: GLOBAL
+          secret: "{AQAAABAAAABAV1DQzoqTNtrLzBcrGQq0TUOxxpHNbs5kC3JbHdQrvgHNh01rB4gogjW2mCArYYc3CiZSsedsny7N0nc4BRveYu4BtalKLFg046oT3DwWIYQ=}"
+      - string:
+          description: "slack-new-token"
+          id: "5247a340-009b-4948-bc15-624288b506c7"
+          scope: GLOBAL
+          secret: "{AQAAABAAAABA7ec2ijjtGsPEeTijVzY+7ZrHkWOnPIcVB2MnTO69UZpr988NEty5WAckz+S+nR8ht+E7aGa0DM0b+r59OgDYSbXX7QC2FA8liakbb4MZWBY=}"
+      - basicSSHUserPrivateKey:
+          description: "ec2plugin"
+          id: "1806b96f-01d2-4c15-b59d-503da10a86e0"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "ubuntu"
+      - basicSSHUserPrivateKey:
+          description: "amazonlinux"
+          id: "bc957ce6-1e7e-47f9-ae55-9c5867a7611d"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "ec2-user"
+      - basicSSHUserPrivateKey:
+          description: "amazonlinuxkey"
+          id: "116d9a40-658a-475d-8a47-872284d28173"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "ec2-user"
+      - basicSSHUserPrivateKey:
+          description: "appmachine"
+          id: "a2052de1-772f-4777-8ecd-65c94a39249f"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
+          scope: GLOBAL
+          username: "ubuntu"
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  clouds:
+  - amazonEC2:
+      cloudName: "AWS-Cloud-Instance"
+      region: "us-east-1"
+      sshKeysCredentialsId: "116d9a40-658a-475d-8a47-872284d28173"
+      templates:
+      - ami: "ami-033b95fb8079dc481"
+        amiType:
+          unixData:
+            sshPort: "22"
+        associatePublicIp: true
+        connectBySSHProcess: false
+        connectionStrategy: PRIVATE_IP
+        deleteRootOnTermination: false
+        description: "AWS Ami"
+        ebsEncryptRootVolume: DEFAULT
+        ebsOptimized: false
+        hostKeyVerificationStrategy: CHECK_NEW_HARD
+        idleTerminationMinutes: "30"
+        labelString: "awsmachine"
+        maxTotalUses: -1
+        metadataEndpointEnabled: true
+        metadataHopsLimit: 1
+        metadataTokensRequired: false
+        minimumNumberOfInstances: 0
+        minimumNumberOfSpareInstances: 0
+        mode: NORMAL
+        monitoring: false
+        numExecutors: 2
+        remoteAdmin: "ec2-user"
+        remoteFS: "/home/ec2-user"
+        securityGroups: "sg-09281a23eba911aca"
+        stopOnTerminate: false
+        subnetId: "subnet-09a3e3e8fedbecc31"
+        t2Unlimited: false
+        tags:
+        - name: "Name"
+          value: "awslave"
+        tenancy: Default
+        type: T2Micro
+        useEphemeralDevices: false
+        userData: "sudo yum install git -y \nsudo yum update -y \nsudo yum install\
+          \ curl -y\ncurl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -\n\
+          sudo yum install nodejs -y"
+      useInstanceProfileForCredentials: true
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "jenkins.diagnostics.ControllerExecutorsAgents"
+  labelAtoms:
+  - name: "awsmachine"
+  - name: "buildmachine"
+  - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  nodes:
+  - permanent:
+      labelString: "buildmachine"
+      launcher:
+        jnlp:
+          workDirSettings:
+            disabled: false
+            failIfWorkDirIsMissing: false
+            internalDir: "remoting"
+      name: "buildmachine"
+      numExecutors: 4
+      remoteFS: "/home/ubuntu/slave1"
+      retentionStrategy: "always"
+  numExecutors: 0
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "zohaib"
+        name: "zohaib ashraf"
+        properties:
+        - "apiToken"
+        - mailer:
+            emailAddress: "zohaib@gmail.com"
+        - preferredProvider:
+            providerId: "default"
+  slaveAgentPort: 0
+  updateCenter:
+    sites:
+    - id: "default"
+      url: "https://updates.jenkins.io/update-center.json"
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+security:
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  sSHD:
+    port: -1
+unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  buildStepOperation:
+    enabled: false
+  email-ext:
+    adminRequiredForTemplateTesting: false
+    allowUnregisteredEnabled: false
+    charset: "UTF-8"
+    debugMode: false
+    defaultBody: |-
+      $PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS:
+
+      Check console output at $BUILD_URL to view the results.
+    defaultContentType: "text/plain"
+    defaultSubject: "$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS!"
+    defaultTriggerIds:
+    - "hudson.plugins.emailext.plugins.trigger.FailureTrigger"
+    maxAttachmentSize: -1
+    maxAttachmentSizeMb: -1
+    precedenceBulk: false
+    watchingEnabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  gitHubConfiguration:
+    apiRateLimitChecker: ThrottleForNormalize
+  gitHubPluginConfig:
+    hookUrl: "http://54.157.19.179:8080/github-webhook/"
+  gitSCM:
+    addGitTagAction: false
+    allowSecondFetch: false
+    createAccountBasedOnEmail: false
+    disableGitToolChooser: false
+    hideCredentials: false
+    showEntireCommitSummaryInChanges: false
+    useExistingAccountWithSameEmail: false
+  globalLibraries:
+    libraries:
+    - defaultVersion: "master"
+      name: "shared-library"
+      retriever:
+        modernSCM:
+          scm:
+            git:
+              credentialsId: "cffa7f6f-21af-4734-962e-ab2ea7055b31"
+              id: "e278b98b-0806-4216-810e-74ee73884426"
+              remote: "https://github.com/automationtimes/nodeapp"
+              traits:
+              - "gitBranchDiscovery"
+  junitTestResultStorage:
+    storage: "file"
+  location:
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "http://54.157.19.179:8080/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  pollSCM:
+    pollingThreadCount: 10
+  slackNotifier:
+    botUser: true
+    room: "jenkins-notification"
+    sendAsText: false
+    teamDomain: "webApplication"
+    tokenCredentialId: "5247a340-009b-4948-bc15-624288b506c7"
+  timestamper:
+    allPipelines: false
+    elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
+    systemTimeFormat: "'<b>'HH:mm:ss'</b> '"
+tool:
+  git:
+    installations:
+    - home: "git"
+      name: "Default"
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
