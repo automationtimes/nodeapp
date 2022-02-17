@@ -22,11 +22,11 @@ credentials:
           scope: GLOBAL
           username: "automationtimes"
       - basicSSHUserPrivateKey:
-          description: "app-machne"
-          id: "70ac5ccb-0575-4729-b379-69b7f96ac48b"
+          description: "key"
+          id: "sshkey"
           privateKeySource:
             directEntry:
-              privateKey: "{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}"
+              privateKey: "{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}"
           scope: GLOBAL
           username: "ubuntu"
 jenkins:
@@ -61,7 +61,7 @@ jenkins:
         metadataEndpointEnabled: true
         metadataHopsLimit: 1
         metadataTokensRequired: false
-        minimumNumberOfInstances: 1
+        minimumNumberOfInstances: 2
         minimumNumberOfSpareInstances: 0
         mode: NORMAL
         monitoring: false
@@ -78,7 +78,7 @@ jenkins:
         tenancy: Default
         type: T2Micro
         useEphemeralDevices: false
-        userData: "#!bin/bash\nyum update -y \nyum -y install curl\ncurl -sL https://rpm.nodesource.com/setup_14.x\
+        userData: "#!/bin/bash\nyum update -y \nyum -y install curl\ncurl -sL https://rpm.nodesource.com/setup_14.x\
           \ | sudo bash -\nyum install -y nodejs\nyum -y install gcc-c++ make\ncurl\
           \ -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo\n\
           yum -y install yarn\nnode --version\nyum install git -y"
@@ -90,6 +90,7 @@ jenkins:
   disabledAdministrativeMonitors:
   - "jenkins.diagnostics.ControllerExecutorsNoAgents"
   labelAtoms:
+  - name: "EC2 (slave-node) - amzn2-ami (i-0295f3b8ea238871a)"
   - name: "EC2 (slave-node) - amzn2-ami (i-08a0a253f052f6a48)"
   - name: "awsmachine"
   - name: "built-in"
@@ -113,14 +114,11 @@ jenkins:
       - id: "zohaibashraf"
         name: "zohaib"
         properties:
-        - "myView"
-        - preferredProvider:
-            providerId: "default"
-        - "timezone"
+        - "apiToken"
         - mailer:
             emailAddress: "zohaib@gmail.com"
-        - "apiToken"
-        - "slack"
+        - preferredProvider:
+            providerId: "default"
   slaveAgentPort: -1
   updateCenter:
     sites:
