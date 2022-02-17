@@ -2,56 +2,33 @@ credentials:
   system:
     domainCredentials:
     - credentials:
-      - usernamePassword:
-          description: "github-repo-login"
-          id: "cffa7f6f-21af-4734-962e-ab2ea7055b31"
-          password: "{AQAAABAAAABwKxYCpcWFauxhWBYnW1PXzTSoS9yTaGpy/5agET/Y1cHINLFZqh1bJjvFkSZNLmXxda/n+JbL3l5BJm6M9ANahiXuKvC1CWLNB/sXi2iowbo3ktgwLxsKG2++xdNoRw0OyayMZhEdR5cqWjUjh6IHbVgiK/kduXkj7A2JXGT2lnY=}"
+      - basicSSHUserPrivateKey:
+          description: "ec2machine"
+          id: "9c976b95-2a02-4dfb-8dfd-0c455895b9d4"
+          privateKeySource:
+            directEntry:
+              privateKey: "{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}"
           scope: GLOBAL
-          username: "automationtimes"
+          username: "ec2-user"
       - string:
           description: "slack-bot-token"
-          id: "slack"
+          id: "4832fdef-b7f8-44c3-91a9-4fb5c218f668"
           scope: GLOBAL
-          secret: "{AQAAABAAAABAN1U/Bzz23PaVILSPd1wVs+NB+GogPDA/aT2MSsi8bewyc55BPOfk8U4Vo+E92bdKHFYABFJIgWUopzzCvnamUk9ryhRAEO4OwmAYkfqkkSM=}"
+          secret: "{AQAAABAAAABANxKoxOnOhXwkXueJBqv9eVEaNmLMpsoJvNEPODNeyTxgD+XhR378DaC0Zi0+01uIDc3NCdEIYFhcN/q3zT6aMLx/VxvVYyyOfopNoiCHKAg=}"
+      - usernamePassword:
+          description: "githublogin"
+          id: "97d4b521-56dc-4480-96f6-531b3d19e8b1"
+          password: "{AQAAABAAAAAwtlvircG5NaDYEmUJ2iOQ5kCeffcpWsSWL3hUspnmORlf3D7G4fMmTN66AEp397FvqlvP3o0Lfh77BTpx86Oycg==}"
+          scope: GLOBAL
+          username: "automationtimes"
       - basicSSHUserPrivateKey:
-          description: "ec2plugin"
-          id: "1806b96f-01d2-4c15-b59d-503da10a86e0"
+          description: "app-machne"
+          id: "70ac5ccb-0575-4729-b379-69b7f96ac48b"
           privateKeySource:
             directEntry:
-              privateKey: "{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}"
+              privateKey: "{AQAAABAAAAaQ72sZjRSp7mRLoEuGjjEOJuKKAkUh8Dfk9pyIuvUE6NV5MUIO+kyUOL3IzExgDgj/MYuhI+0+z3BK5a2sxz8k1khpVsHTPYH5hy2CgfFjLZK8T+TxvF9TNF++j9ULaXpxbPSyCe4vrZ4Db+/BNEwfznOj/NFOpQ+3hpEYM7R3SLw+H0zRJLsirMYPfIYvJ+R0U7oafBY6zgLB+jwvgVkoIcP9m5E7dbFcfPQ41ncSd+UL7z4KpdQKIT3Ww8q6wzpBk7laPm/96vGztMnwml3YzFSoc+qpxipvpqw/h0veVevQBMbxGqCtgroCjADhAljlqtnwLLtGZLA3UJhFM47jok3XGpey2FDo0Y+gZdCYfiXslwN/1cMWviRfWZJjzHPbR1ZUrUXv9ploWRwyJv3pAfx9QATVAdgjjp+h5qwFIZdLtXVtvTV858fcgPSwePIl6sgWODll2d2G+Eai4js4apxNFnJGCVeoHk44sYqwRspswr6YUxYkqpLixBYPhEzfnZCPkcxKHvm7Q/UAodxLLTcaFrJkwrNCipOZRi2OX7XL9z+TcQ91qffaM+O0Ey2w7vFpMTLXFvITfwYQ/d8RiBQRODT/YCQtpmjU8/Wvz2HJfXv3LqrZsQOz7SwyTKYFFqQ+H54ri7+dArjWzl10peh7FERkbuli318oyoYpwMmw1ZMKjmx14n0kZW/5gmT31hQr1Hp+dTdeLIBF/hhLwmD3W0dvPcSAlFopaLluwM9YhWzADv73AMN6zEyucRyeDaIUylBC2/lvuu51Hg0cqizLcQRzyh9NQK0XpOgEuNoo9MZe35KcA2BvNFLihD/Gy5+fy64tvPylHx7gtf4Tbzwh9yKl0qQ/7KSZCokE2rIpn6SUlWBXOFwqEw9tYFD2jup/VwG602phHIEzAFLPqpCUC3K0oDkkXKWMR75SBSW/8jY4tJXdaY6FsJywXlQ1GslWQ6ifssLqxq0BNjMk+SpdvzP/MOGhRJUuwLlECl4XFz4ympxK5KicGPoXFpyBasyPYQjoZ6zbTI/sjg+gzRUFCtwbHp7EPJYCHHN+ucHRV1gO6hvRcZ+uTmItrOLdbgT32KicgSnU4lICtYwL3L1+gFGEDbNh1ytTflvyUt9lamQM+HAzkHxCAHmXNowjroCf6HKTJgb5+oNdEiBbxhjQPqQzRa3lxCCQxW+BwGrxZ3PBg5LPVimCMZe5oD/3Wwfzyyy6Nwv0b4TIKiiQExlKpP0PGNsk7SSeqKnAVxaGTH79WVMrBLbMvRzdbb2HiSpyzSgXWqUXcL2jpw045KH3qdeLT5jSbTfi7cG44Z1iznw0eCx9THHHMgkmXmxJQmgb40r80B6xpVDl4F46otAEuv56A8D9LTd/I12eZ7iBX2hxKAYXeVcPoaWaCSxC8BCzGNr7UrLE2wTOfJ1wIoAXnm9GXHLvyczfSOvWJsxNmrY907rNpfjif60ApVz/WMXaVneNJXFFZtfrQAfIyWC/Owc2rMcep6DjbUN+zxbj9ygQi5lHfgafKH+pUqUo5eObgRUMJZQladG3jV6VDDaxOYFm5XzHQU8ngVffyYWIhqHGoNvon5ER2Dc/2tXzW14BuxXuCTMoYa/pz2e97W62a8xV0pK0zqkddMItGUHtucMcbxzfOWKALEoU3toWD9i5GdR9qUOEgfe3yRDE3/Jy+Hs7jYocZFPhvWldKlgs8kgt4fOcY1tnbSTId+v8wFO1Ko9i6tTAOu/npBS8NbuHG5ULC4wtnpgfEyDZmZUxu/EjnIR1vpG2g4NqGgG55iMrUW1tEGWKS125tdT0jbPdQik9nu9yhIGIJ5Z91fWBuEfRZ9/1LvB7K+5X+RvoLbxBWtZHBjkZG6q+BXgYHiG6b4mAxq80REHIlPdmUCyZYEdgLppy4pSE4o8++leHdmV6abjWSeTS8GCrpqHHYRb8J/1caj4ktGJ0jo8DE070y9Ddm73zcseByILhPDZSxqTxCOAPn+smKkh5dlXI6rzpMsWmY68g4s9kDa32lUlRd4msLRvMAEPxd1Aq6kpVf3AABdvKWb6+8hilwMJFcZxDpZavvSOusWvJtVEOgw7Bp6shii9f1peNkyFJ8SxbiJCsJMwvTXW2wIfaLeltXj2LgkAB2J3PNeBwUuO1AyJqcHT+uQkg/flvXRnNL0MImkp0+LOikW1wA32oiTueBaydDiy29BtCOt4ARlkptBVYNLjGZURz7BHtsiiugWTJaQRpEbxZZc5UaAvwCt2I9w==}"
           scope: GLOBAL
           username: "ubuntu"
-      - basicSSHUserPrivateKey:
-          description: "amazonlinux"
-          id: "bc957ce6-1e7e-47f9-ae55-9c5867a7611d"
-          privateKeySource:
-            directEntry:
-              privateKey: "{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}"
-          scope: GLOBAL
-          username: "ec2-user"
-      - basicSSHUserPrivateKey:
-          description: "amazonlinuxkey"
-          id: "116d9a40-658a-475d-8a47-872284d28173"
-          privateKeySource:
-            directEntry:
-              privateKey: "{AQAAABAAAAjwf6oVf0kddFsQHKRImdf27JpktLAnmUz5LXJAOePo8H26SfX7mfdzeY5Z7VdNMJK97jubzeRT5iRSWgM52kxSdfPb1BRjJDDzb+eRhwVbfjTsTLRU3/eTLmBbRGmtppqs7PNLPw1LjTUvc+P3Y632uHdcQRYyPnJvE3QbAGoc/o1j9qLwLAQ0I7pqKHBrg62o/jcxg0p1XcgZ2YDQwMiRX+I117J+WeWEUzek5e/U1zWiTvSC6AO5iWrFNcZ6FH2g7KgtU7S7+JzWG8WeWXUY8S0E8rg31wgbqFdXuoFOH8NYzHk2bTe84nXc/9HwJsh9DHANL1taiOkX5Z3T5VZww+lkVoFFsiYqlKtgFa3UX9tpKcRiOiTOmhYhbtU2a6TyVTF4JCTOqII7rQckbeaLpzkjMLVEk5HfMgrxOuUbKN3tTrRb0kRzB3miV9MCipX2852YkXgFyJ0vFNe4opk7e54KV4vsf7oQsofGMJQmNYXozb45GtHiVP0c8VzvU8MLWNtsKrOiH09ZSv/gWkbs1XDQmbT55X41zjn+zj9dysdbcd/vjGYLzgkHzlowovxx9qWtJoFM4QFIlGetuUJbmuw29+LUgpa9OAmiZoR00k7QQ2+Y/wAZM3o0ZAjER0KcI1KgkGrwm23EdnfJOSuMOQ0YEf2Ud8i4rVPayVjSm7qiMftAcQoXmch19m5fSUZ50TyT1UaemaJCUGdQSMo56aHLR+R+EDkZ6pbL9dWysqP7QlwKHMupMv/rjeDmDGy0W/OMijv1w9/cKskFskl+ItLIvvhevHwVirYsO6qXR9ePXLBHaL1aA4dIUa73JcQKha8/K0rdgmlS+e3IXPIJcg8KeaVJOrAwT+AI40kMwXZuvdhGR3KJtBO4zSYIJZXxaXhq+REMHbhCW/eox+wKYWUDSjgye2Pk907W9Ou4GdL/tD1d8A8atrKa4qtGSdEy7lqZeh1WddB3oVLg3YMOFGPD8zRktmb2UCzvDBaNv7KBY3B8Wm60sjen4CM3R2Qq3GspHE+Zz5pLT5f5ps2dWRW4VYIzdu7TaNCRdmkB0Uvh7WzQ7jB7SKmvhl7THdAruzbahSEmkTe2Ul+GEANJPzff7wmQsq+i5s+tgWymUohKAepUWusdLruQeof5pAsvuM52cS405mun7hTxoDR6CIstXg9iQJtOgAJ5ZcgtnCyOR1Kj6UYAxSquc3zlgMsmVVS5RsnavHfFmqx9wtPwYGH3FKi/ql1ne3ErfLncdSDZrP5uoHgw8NI7tVppUqUfsNqSip5sKindS7+0Hup3xy4NwWWWO8JwOuJbZ6F5uF84vhUt+UC0jv4ukAOW0uNzcRLM7AEvN9i3Kl3XtLO/jbqouG7/ApgoVFmsrLuy3D6ckhPAqyoQ/Zt7H1QsOYZgWnL4WJLBoCNx1bqBlKTkXgdnKtFXn7Xzp75bV6ZURF0AHZIlnNHV0muWZLlKGK98OqnBFkQCRfM0Pl9XrrQ3GadSbZuWzpnNyfD0OrqjmWpuaf/ha4cnRxC0A55ofuCSDSvf/OUC1MtoEStIZDr3kCOhwJZYRL0D4vVWUXo9iktZ8FDJo4tZdR/tJSYrc8//y8OK0yyXzLAsyxZpGDj2yRF4GGtD/djXw0HmIl8dR7c+aHqTX++qlCPQehYnBiTZtX88jDEqmRo4zJ9v1FqCeMAolbMVOyDDtum8tjB/NzUoqo51VpDpxnHW3LH/onNjHPGzp3vNYwgTmqdMIudErObrPNBGIaUwbwxPhfxrXyOYBSFiV40km4SRUXkrhuIu3O+xQRxFdAhD1j9M/dj5a0o26Du75bSF4B4zXJgWk2u+6AAXL1U0qrX7TNAX+34WFJ1RlamH0u3oVVbK5JYU+lfRjkC2a9XSghyNgCtQVtVd32mPoJouCZk+z9nQPGL58Byl56gnMOaUodDOf+AC49I00bSFn9G787HVk0bMATLE5/acuWmfxaAyCd6dMOGv+mMg4IFUv27whTmEBzDuJTG+JWejy7YdFO2sGYUrKNrUgYwJeNmoQWb7I0fpHXYpTiQk2JNCAhvqiMYwV8VeioTlcr7TFrhsE/TufBqmyB3os/91W/Z24kGF7OEpO61tqUSBX3UvN4eaGS7KCZ9tJRv53kiHlE1cJtfeqPpZFe1TNJXsItk8hR70L3WmlR4UiIzEl2E7naQ0BTUJZbwGwojbkBrfNtm5NYO4XJYyU85iBZPgVw/1+3hfS4308DJ+0VdXOz41fLbcgD1+6NIKZAMKbwVswr5AaAgX49l8qfVAud+poUJFksCFgKBAKyFzkpc99HHVmG9imTuo5giLUXsqUktRhhpoPhsjXmfuuJSZmKGecNEKHM1f5Au/1q7xVugpzghNgSHwhEMv0wb1h1mFCYuVkXzs+eeCik7lLwk9S69OFv3R0XmoCidaE0UI9uR/hzrBI1LvZQROa8ardwBUNhZQhP4GJGjpkE3Um4pct4MKdFbxUtetmKz/Y02QjaWgeCbuULsBmb7ixHpXy0oSv14r0biMM0D3sFcO/swgIhe/0zOCYhSqwjv5xx5KmIjS9GP6F1Dbrgz2TVoum4vGAhhjzlwlw2U48uJF5jMfYEa5/RxO2a0dr8J7hjLeiNc8F9RSfOuve49+j/6nIEglfyQ80UqUc25pv4+24f7JeazwlMZqJ4NkT1lD8IMmk2pIaMSUrSN5qTYoi0LbDnhee/RBakmRyC5xawJFdb1yEXo+MjLUi7g3SFv3a1pV4VNi+wk+KIeLqrNc3/XwMfNuQ1W42cgLEV8xUoMSVzaBFoAd2ypV2oFWiivqMwx02gfC6JSm/XbyOlOJjKVdClW2Ic6PSG0UaSB5E90JQMNm5UP6KRQP7J0L7WZkFu38IfnkgHe9emGgyoWNKiwjBzq+wXgeaE793RJw7a53GIAjSQUEDD8AuGhN682j1nLgyhpjTIxocVQwvndu+nV7kYmVPfTnq1vQd8kyeKe+WAPDPGE7IP4OnTiJRnA3GXUIjFb5lvaWphS3yX95k6it7U2HeRNANOwrwFQ01bRw5Dox6YLYNkXZgK5MLM57c1sF}"
-          scope: GLOBAL
-          username: "ec2-user"
-      - basicSSHUserPrivateKey:
-          description: "appmachine"
-          id: "a2052de1-772f-4777-8ecd-65c94a39249f"
-          privateKeySource:
-            directEntry:
-              privateKey: "{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}"
-          scope: GLOBAL
-          username: "ubuntu"
-      - basicSSHUserPrivateKey:
-          id: "de4c7d83-fcc1-4942-86cf-44fd604c859d"
-          privateKeySource:
-            directEntry:
-              privateKey: "{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}"
-          scope: GLOBAL
-          username: "ec2-user"
 jenkins:
   agentProtocols:
   - "JNLP4-connect"
@@ -61,82 +38,64 @@ jenkins:
       allowAnonymousRead: false
   clouds:
   - amazonEC2:
-      cloudName: "AWS-Cloud-Instance"
+      cloudName: "slave-node"
       region: "us-east-2"
-      sshKeysCredentialsId: "de4c7d83-fcc1-4942-86cf-44fd604c859d"
+      sshKeysCredentialsId: "9c976b95-2a02-4dfb-8dfd-0c455895b9d4"
       templates:
       - ami: "ami-0b614a5d911900a9b"
         amiType:
           unixData:
+            rootCommandPrefix: "awsmachine"
             sshPort: "22"
         associatePublicIp: true
-        connectBySSHProcess: false
+        connectBySSHProcess: true
         connectionStrategy: PRIVATE_IP
         deleteRootOnTermination: false
-        description: "AWS Ami"
+        description: "amzn2-ami"
         ebsEncryptRootVolume: DEFAULT
         ebsOptimized: false
-        hostKeyVerificationStrategy: CHECK_NEW_HARD
+        hostKeyVerificationStrategy: CHECK_NEW_SOFT
         idleTerminationMinutes: "30"
         labelString: "awsmachine"
         maxTotalUses: -1
         metadataEndpointEnabled: true
         metadataHopsLimit: 1
         metadataTokensRequired: false
-        minimumNumberOfInstances: 0
+        minimumNumberOfInstances: 1
         minimumNumberOfSpareInstances: 0
         mode: NORMAL
         monitoring: false
         numExecutors: 2
         remoteAdmin: "ec2-user"
-        remoteFS: "/home/ec2-user"
+        remoteFS: "/home/ec2-user/"
         securityGroups: "sg-06175f9cdd59fcc97"
         stopOnTerminate: false
-        subnetId: "subnet-003f35a6017b2a1bf"
+        subnetId: "subnet-04a4343e688eac5cd"
         t2Unlimited: false
         tags:
         - name: "Name"
-          value: "awsslave"
+          value: "jenkins-slave"
         tenancy: Default
         type: T2Micro
         useEphemeralDevices: false
-        userData: |-
-          sudo yum -y install curl
-          curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
-          sudo yum install -y nodejs
-          sudo yum -y install gcc-c++ make
-          curl -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-          sudo yum -y install yarn
-          node --version
-          sudo yum install git -y
+        userData: "#!bin/bash\nyum update -y \nyum -y install curl\ncurl -sL https://rpm.nodesource.com/setup_14.x\
+          \ | sudo bash -\nyum install -y nodejs\nyum -y install gcc-c++ make\ncurl\
+          \ -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo\n\
+          yum -y install yarn\nnode --version\nyum install git -y"
       useInstanceProfileForCredentials: true
   crumbIssuer:
     standard:
       excludeClientIPFromCrumb: false
   disableRememberMe: false
   disabledAdministrativeMonitors:
-  - "jenkins.diagnostics.ControllerExecutorsAgents"
+  - "jenkins.diagnostics.ControllerExecutorsNoAgents"
   labelAtoms:
-  - name: "EC2 (AWS-Cloud-Instance) - AWS Ami (i-0263b8e1f33d7d9ce)"
+  - name: "EC2 (slave-node) - amzn2-ami (i-08a0a253f052f6a48)"
   - name: "awsmachine"
-  - name: "buildmachine"
   - name: "built-in"
   markupFormatter: "plainText"
   mode: NORMAL
   myViewsTabBar: "standard"
-  nodes:
-  - permanent:
-      labelString: "buildmachine"
-      launcher:
-        jnlp:
-          workDirSettings:
-            disabled: false
-            failIfWorkDirIsMissing: false
-            internalDir: "remoting"
-      name: "buildmachine"
-      numExecutors: 4
-      remoteFS: "/home/ubuntu/slave1"
-      retentionStrategy: "always"
   numExecutors: 0
   primaryView:
     all:
@@ -152,14 +111,17 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "zohaibashraf"
-        name: "zohaib ashraf"
+        name: "zohaib"
         properties:
-        - "apiToken"
-        - mailer:
-            emailAddress: "zohaib@gmail.com"
+        - "myView"
         - preferredProvider:
             providerId: "default"
-  slaveAgentPort: 0
+        - "timezone"
+        - mailer:
+            emailAddress: "zohaib@gmail.com"
+        - "apiToken"
+        - "slack"
+  slaveAgentPort: -1
   updateCenter:
     sites:
     - id: "default"
@@ -185,8 +147,6 @@ unclassified:
     - "jobBuildDiscarder"
   buildStepOperation:
     enabled: false
-  casCGlobalConfig:
-    configurationPath: "/home/ubuntu/jenkins.yml"
   email-ext:
     adminRequiredForTemplateTesting: false
     allowUnregisteredEnabled: false
@@ -210,7 +170,7 @@ unclassified:
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://54.157.19.179:8080/github-webhook/"
+    hookUrl: "http://3.142.243.218:8080/github-webhook/"
   gitSCM:
     addGitTagAction: false
     allowSecondFetch: false
@@ -227,8 +187,8 @@ unclassified:
         modernSCM:
           scm:
             git:
-              credentialsId: "cffa7f6f-21af-4734-962e-ab2ea7055b31"
-              id: "e278b98b-0806-4216-810e-74ee73884426"
+              credentialsId: "97d4b521-56dc-4480-96f6-531b3d19e8b1"
+              id: "b668c940-10d3-440f-9f84-69d41261412c"
               remote: "https://github.com/automationtimes/nodeapp"
               traits:
               - "gitBranchDiscovery"
@@ -236,7 +196,7 @@ unclassified:
     storage: "file"
   location:
     adminAddress: "address not configured yet <nobody@nowhere>"
-    url: "http://3.137.165.204:8080/"
+    url: "http://3.142.243.218:8080/"
   mailer:
     charset: "UTF-8"
     useSsl: false
@@ -245,10 +205,10 @@ unclassified:
     pollingThreadCount: 10
   slackNotifier:
     botUser: true
-    room: "jenkins-notification"
+    room: "#jenkins-notification"
     sendAsText: false
     teamDomain: "webApplication"
-    tokenCredentialId: "slack"
+    tokenCredentialId: "4832fdef-b7f8-44c3-91a9-4fb5c218f668"
   timestamper:
     allPipelines: false
     elapsedTimeFormat: "'<b>'HH:mm:ss.S'</b> '"
