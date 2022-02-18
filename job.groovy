@@ -13,6 +13,10 @@ pipelineJob('DSL_Demo') {
             }
         }
     }
+    steps {
+        shell("npm install")
+    }
 }
+
 
 
