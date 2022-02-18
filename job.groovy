@@ -13,5 +13,6 @@ pipelineJob('DSL_Demo') {
             }
         }
     }
+}
 
 
