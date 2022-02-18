@@ -4,8 +4,9 @@ jobs:
           scm {
               git('https://github.com/automationtimes/nodeapp')
           }
+          branch('*/master')
           triggers {
-              scm('H/1 * * * *')
+              scm('* * * * *')
           }
           steps {
              sh 'npm install'
