@@ -1,4 +1,4 @@
-pipelineJob('DSL_Demo') {
+pipelineJob('DSL') {
 
     def repo = ' https://github.com/automationtimes/nodeapp'
    
