@@ -1,5 +1,5 @@
 job('testing') {
     steps {
-        shell('this is just for testing!')
+        echo 'this is just for testing!'
     }
 }
