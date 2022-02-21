@@ -1,0 +1,28 @@
+jobs:
+  - script: >
+      freeStyleJob('seed-job') {
+        triggers {
+          hudsonStartupTrigger {
+            quietPeriod("10")
+            runOnChoice("ON_CONNECT")
+            label("awsmachine")
+          }
+        }
+          scm {
+            git {
+              remote {
+                url('https://github.com/automationtimes/nodeapp')
+                credentials('githublogin')
+              }
+              branches('master')
+            }
+          }
+        
+        displayName('seed-job')
+        steps {
+          dsl {
+            external('jobs/*.groovy')
+            removeAction('DELETE')
+            removeViewAction('DELETE')
+          }
+        }

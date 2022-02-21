@@ -128,22 +128,6 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
-jobs:
-    - script: >
-        pipelineJob("DSL") {
-        definition {
-            cpsScm {
-                scm {
-                    git{
-                      remote {
-                        url("https://github.com/automationtimes/nodeapp")
-                      }
-                      branch("*/master")
-                    }
-                }
-            }
-          }
-        }
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
