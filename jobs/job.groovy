@@ -15,9 +15,9 @@
 //     }
     
 // }
-job('Hello World') {
+job('job-1') {
   steps {
-    shell('echo "Hello World!"')
+    shell('echo "This is job-1"')
   }
 }
 
