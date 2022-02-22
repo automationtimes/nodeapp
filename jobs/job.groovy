@@ -1,6 +1,6 @@
 job('job-1') {
   steps {
-    shell('echo "DSL project!"')
+    shell('echo "DSL job-1!"')
   }
 }
 
