@@ -68,9 +68,9 @@ jenkins:
         numExecutors: 2
         remoteAdmin: "ec2-user"
         remoteFS: "/home/ec2-user/"
-        securityGroups: "sg-06175f9cdd59fcc97"
+        securityGroups: "sg-0e6d8e3f108da1315"
         stopOnTerminate: false
-        subnetId: "subnet-04a4343e688eac5cd"
+        subnetId: "subnet-0aa3006f1678c390a"
         t2Unlimited: false
         tags:
         - name: "Name"
@@ -90,8 +90,7 @@ jenkins:
   disabledAdministrativeMonitors:
   - "jenkins.diagnostics.ControllerExecutorsNoAgents"
   labelAtoms:
-  - name: "EC2 (slave-node) - amzn2-ami (i-0295f3b8ea238871a)"
-  - name: "EC2 (slave-node) - amzn2-ami (i-08a0a253f052f6a48)"
+  - name: "EC2 (slave-node) - amzn2-ami (i-0c540b17345230576)"
   - name: "awsmachine"
   - name: "built-in"
   markupFormatter: "plainText"
@@ -128,6 +127,26 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
+jobs:
+  - script: >
+      freeStyleJob('seed-job') {
+    def repo = ' https://github.com/automationtimes/nodeapp'
+    triggers {
+        scm('* * * * *')
+    } 
+    definition {
+        cpsScm {
+          scm {
+            git(repo, 'master', { node -> node / 'extensions' << '' } )
+            }
+        }
+    }
+    steps {
+     sh 'npm install'
+    }
+
+    
+}
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
