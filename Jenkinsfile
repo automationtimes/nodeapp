@@ -12,7 +12,7 @@ pipeline {
         }
           stage("App Deploy"){
             environment {
-                  SECRET_FILE_ID = credentials('ubuntu-sshkey')
+                  SECRET_FILE_ID = credentials('sshkey')
                   
                 }
             steps
