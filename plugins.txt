@@ -22,4 +22,4 @@ ws-cleanup:latest
 slack:latest
 ec2:latest
 seed:latest
-authorize-project:latest
+
