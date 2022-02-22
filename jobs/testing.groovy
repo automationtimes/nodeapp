@@ -1,5 +1,5 @@
-job('groovyjob2') {
+job('job-2') {
   steps {
-    shell('echo "Hello World!"')
+    shell('echo "DSL project!"')
   }
 }
