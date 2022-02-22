@@ -61,7 +61,7 @@ jenkins:
         metadataEndpointEnabled: true
         metadataHopsLimit: 1
         metadataTokensRequired: false
-        minimumNumberOfInstances: 2
+        minimumNumberOfInstances: 1
         minimumNumberOfSpareInstances: 0
         mode: NORMAL
         monitoring: false
@@ -127,26 +127,6 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
-jobs:
-  - script: >
-      freeStyleJob('seed-job') {
-    def repo = ' https://github.com/automationtimes/nodeapp'
-    triggers {
-        scm('* * * * *')
-    } 
-    definition {
-        cpsScm {
-          scm {
-            git(repo, 'master', { node -> node / 'extensions' << '' } )
-            }
-        }
-    }
-    steps {
-     sh 'npm install'
-    }
-
-    
-}
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"

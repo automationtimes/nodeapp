@@ -1,10 +1,6 @@
 pipelineJob('DSL') {
 
     def repo = ' https://github.com/automationtimes/nodeapp'
-   
-    triggers {
-        scm('* * * * *')
-    }
     
     definition {
         cpsScm {
