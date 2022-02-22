@@ -20,7 +20,7 @@ pipeline {
           steps
           {  sh 'whoami'
               sh 'echo "${SECRET_FILE_ID}"'
-              sh 'scp -r -i "${SECRET_FILE_ID}" -o StrictHostKeyChecking=no /home/ec2-user/workspace/webapplication/* ubuntu@10.0.0.38:/var/www/html/'
+              sh 'scp -r -i "${SECRET_FILE_ID}" -o StrictHostKeyChecking=no /home/ec2-user/workspace/seed-jobs/* ubuntu@10.0.0.38:/var/www/html/'
               sh 'ssh -i "${SECRET_FILE_ID}"  ubuntu@10.0.0.38 "cd /var/www/html/ && pm2 start index.js -f && NODE_ENV=dev pm2 restart 0 --update-env"'
           }
         }
