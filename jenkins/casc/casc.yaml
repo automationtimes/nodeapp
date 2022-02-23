@@ -127,11 +127,29 @@ jenkins:
   - all:
       name: "all"
   viewsTabBar: "standard"
+jobs:
+    - script: >
+        pipelineJob("Seed-jobs") {
+        definition {
+            cpsScm {
+                scm {
+                    git{
+                      remote {
+                        url("https://github.com/automationtimes/nodeapp/")
+                      }
+                      branch("*/master")
+                    }
+                }
+            }
+          }
+        }  
 globalCredentialsConfiguration:
   configuration:
     providerFilter: "none"
     typeFilter: "none"
 security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
   apiToken:
     creationOfLegacyTokenEnabled: false
     tokenGenerationOnCreationEnabled: false
