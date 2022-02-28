@@ -1,4 +1,4 @@
-job('job-3wwww') {
+job('finaljob') {
   steps {
     shell('echo "DSL job-1!"')
   }
