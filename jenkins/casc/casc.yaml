@@ -131,7 +131,8 @@ jobs:
     - script: >
         pipelineJob("Seed-jobs") {
         definition {
-            cpsScm {
+            cpsScm 
+            {
                 scm {
                     git{
                       remote {
@@ -141,6 +142,10 @@ jobs:
                     }
                 }
             }
+             triggers {
+                 githubPush()
+                     }
+
           }
         }  
 globalCredentialsConfiguration:
