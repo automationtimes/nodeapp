@@ -22,5 +22,5 @@ ws-cleanup:latest
 slack:latest
 ec2:latest
 seed:latest
-script-security:1.77
+
 
