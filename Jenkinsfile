@@ -14,7 +14,7 @@ pipeline {
         }
         stage("App Deploy"){
           environment {
-                SECRET_FILE_ID = credentials('awsubuntukey')
+                SECRET_FILE_ID = credentials('awsec2key')
                 
               }
           steps
