@@ -1,6 +1,6 @@
 FROM jenkins/jenkins:latest
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
+ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc
 USER root
 RUN apt-get update -qq \
     && apt-get install -qqy apt-transport-https ca-certificates curl gnupg2 software-properties-common 
@@ -14,7 +14,7 @@ RUN apt-get update  -qq \
 RUN usermod -aG docker jenkins
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
-COPY /jenkins/casc/casc.yaml /var/jenkins_home/casc.yaml
+COPY jenkins/casc /var/jenkins_home/casc
 COPY security-script.groovy /usr/share/jenkins/ref/init.groovy.d/
 
 

@@ -22,8 +22,7 @@ ws-cleanup:latest
 slack:latest
 ec2:latest
 seed:latest
-script-security:1.77
-aws-credentials:latest
+script-security:latest
 aws-secrets-manager-credentials-provider:latest
 
 

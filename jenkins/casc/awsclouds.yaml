@@ -1,0 +1,94 @@
+jenkins:
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  clouds:
+  - amazonEC2:
+      cloudName: "slave-node"
+      region: "us-east-2"
+      sshKeysCredentialsId: "awsec2key"
+      templates:
+      - ami: "ami-0b614a5d911900a9b"
+        amiType:
+          unixData:
+            rootCommandPrefix: "awsmachine"
+            sshPort: "22"
+        associatePublicIp: true
+        connectBySSHProcess: true
+        connectionStrategy: PRIVATE_IP
+        deleteRootOnTermination: false
+        description: "amzn2-ami"
+        ebsEncryptRootVolume: DEFAULT
+        ebsOptimized: false
+        hostKeyVerificationStrategy: CHECK_NEW_SOFT
+        idleTerminationMinutes: "30"
+        labelString: "awsmachine"
+        maxTotalUses: -1
+        metadataEndpointEnabled: true
+        metadataHopsLimit: 1
+        metadataTokensRequired: false
+        minimumNumberOfInstances: 1
+        minimumNumberOfSpareInstances: 0
+        mode: NORMAL
+        monitoring: false
+        numExecutors: 2
+        remoteAdmin: "ec2-user"
+        remoteFS: "/home/ec2-user/"
+        securityGroups: "sg-0e6d8e3f108da1315"
+        stopOnTerminate: false
+        subnetId: "subnet-0aa3006f1678c390a"
+        t2Unlimited: false
+        tags:
+        - name: "Name"
+          value: "jenkins-slave"
+        tenancy: Default
+        type: T2Micro
+        useEphemeralDevices: false
+        userData: "#!/bin/bash\nyum update -y \nyum -y install curl\ncurl -sL https://rpm.nodesource.com/setup_14.x\
+          \ | sudo bash -\nyum install -y nodejs\nyum -y install gcc-c++ make\ncurl\
+          \ -sL https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo\n\
+          yum -y install yarn\nnode --version\nyum install git -y"
+      useInstanceProfileForCredentials: true
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "jenkins.diagnostics.ControllerExecutorsNoAgents"
+  labelAtoms:
+  - name: "EC2 (slave-node) - amzn2-ami (i-0c540b17345230576)"
+  - name: "awsmachine"
+  - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  numExecutors: 0
+  primaryView:
+    all:
+      name: "all"
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "zohaibashraf"
+        name: "zohaib"
+        properties:
+        - "apiToken"
+        - mailer:
+            emailAddress: "zohaib@gmail.com"
+        - preferredProvider:
+            providerId: "default"
+  slaveAgentPort: -1
+  views:
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
