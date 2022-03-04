@@ -31,7 +31,6 @@ unclassified:
           scm:
             git:
               credentialsId: "gitpermission"
-              id: "b668c940-10d3-440f-9f84-69d41261412c"
               remote: "https://github.com/automationtimes/nodeapp"
               traits:
               - "gitBranchDiscovery"
